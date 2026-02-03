@@ -2,7 +2,7 @@ describe('User is able to scroll thru the page', () => {
   beforeEach(()=> {
     // Visit heroku
     cy.visit('/');
-    // Click "Infinite Screoll" link to redirect to page
+    // Click "Infinite Scroll" link to redirect to page
     cy.get('a[href="/infinite_scroll"]').click()
     // Wait for page to load: url containes /infinite_scroll
     cy.url().should('include', '/infinite_scroll');
